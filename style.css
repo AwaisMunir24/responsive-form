@@ -1,0 +1,277 @@
+.first-section,
+.third-section,
+.fifth-section {
+    padding: 50px 0px;
+}
+
+.sixth-section {
+    padding-bottom: 50px;
+}
+
+.feature1,
+.feature2 {
+    position: relative;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.feature1 input,
+.feature2 input {
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+input[type=radio]:checked~div {
+    background-color: #5c068c;
+
+
+}
+
+.content {
+    position: relative;
+    margin: 15px 0px;
+    align-items: center;
+
+}
+
+.center {
+    position: absolute;
+    top: -50%;
+    right: 0%;
+    transform: translate(-50%, 50%);
+}
+
+.center input[type="checkbox"] {
+    position: relative;
+    width: 80px;
+    height: 30px;
+    -webkit-appearance: none;
+    background: #301C4A;
+    outline: none;
+    border-radius: 20px;
+    /* transition: .5s; */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+}
+
+.center input:checked[type="checkbox"] {
+    background: #5c068c;
+
+}
+
+.center input[type="checkbox"]:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+
+}
+
+.center input:checked[type="checkbox"]:before {
+    left: 50px;
+}
+
+.after_input {
+    background: #301A4B;
+    color: white;
+    border: none;
+    width: 100%;
+    border-radius: 20px;
+    font-weight: 500;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.after_input2 {
+    background: #301A4B;
+    color: white;
+    border: none;
+    width: 180px;
+    border-radius: 10px;
+    font-weight: 500;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    width: 30px;
+    height: 30px;
+    background-color: #FFEC00;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.address p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px 0px;
+}
+
+li i {
+    margin-right: 8px;
+}
+
+ul {
+    padding: 0px;
+    margin: 10px 0px;
+}
+
+button {
+    background: #301A4B;
+    color: white;
+    border: none;
+    width: 100%;
+    border-radius: 20px;
+    font-weight: 500;
+    height: 35px;
+}
+
+.section {
+    background: #FDFDFF;
+    border: 1px solid #D7D7D7;
+
+}
+
+.up-color {
+    height: 20px;
+    background-color: #380F51;
+}
+
+.heading-section {
+    border-bottom: 1px solid #380F51;
+}
+
+.heading {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading img {
+    width: 150px;
+    height: 100px;
+}
+
+section {
+    color: #380F51;
+}
+
+.five-sect-para p,
+.second-sect-para p {
+    margin-top: 16px;
+}
+
+.yesno button {
+    border: 1px solid #D7D7D7;
+    color: black;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0px 15px;
+}
+
+.clicked {
+    background: #5F0791;
+    color: white;
+}
+
+@media screen and (max-width:1400px) {
+    .after_input2 {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .after_input2 {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .first-section,
+    .third-section,
+    .fifth-section {
+        padding: 35px 0px;
+    }
+
+    .sixth-section {
+        padding-bottom: 35px;
+    }
+
+    .section {
+        margin: 10px 0px;
+    }
+
+    .heading-section p {
+        font-size: 12px;
+    }
+
+    .feature2 {
+        margin: 0px 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .section {
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .first-section,
+    .third-section,
+    .fifth-section {
+        padding: 20px 0px;
+    }
+
+    .sixth-section {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .center input[type="checkbox"] {
+        width: 50px;
+        height: 20px;
+    }
+
+    .center input[type="checkbox"]:before {
+
+        width: 20px;
+        height: 20px;
+    }
+
+    .center {
+        top: -10px;
+    }
+
+    .center input:checked[type="checkbox"]:before {
+        left: 35px;
+    }
+}

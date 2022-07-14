@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".feature1").on("change", function () {
+          $(this).parents("section").find("span").text("select");
+          var data = $(this).val();
+          $(this).find("span").text("selected");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <section class="first-section">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="d-flex">
+                <div class="number">1</div>
+                <div class="address">
+                  <p>
+                    Enter your address to see our nbn plans available to you
+                  </p>
+                </div>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Address(numbe,street,suburb,state,postcode)"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="second-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="d-flex">
+                <div class="number">2</div>
+                <div class="address">
+                  <p>Select Your bandWidth type</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="section second-sect-para">
+                <div class="up-color"></div>
+                <div class="p-3">
+                  <div
+                    class="heading-section d-flex align-items-center justify-content-between"
+                  >
+                    <h4>Priority</h4>
+                    <p class="m-0">Best Effort bandwidth (Low cost)</p>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur unde nisi soluta, autem minima aperiam
+                    obcaecati beatae culpa asperiores consectetur?
+                  </p>
+                  <div class="feature1">
+                    <input
+                      type="radio"
+                      id="feature1"
+                      value="Priority"
+                      name="bandwidth_type"
+                    />
+                    <div class="after_input">
+                      <span> select </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="section second-sect-para">
+                <div class="up-color"></div>
+                <div class="p-3">
+                  <div
+                    class="heading-section d-flex align-items-center justify-content-between"
+                  >
+                    <h4>Priority</h4>
+                    <p class="m-0">Best Effort bandwidth (Low cost)</p>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquam, nesciunt itaque ducimus esse voluptatibus quidem in
+                    fugit fuga eos. Sint?
+                  </p>
+                  <div class="feature1">
+                    <input
+                      type="radio"
+                      id="feature1"
+                      value="Priority"
+                      name="bandwidth_type"
+                    />
+                    <div class="after_input">
+                      <span> select </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="third-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="d-flex">
+                <div class="number">3</div>
+                <div class="address">
+                  <p>Select Your bandWidth type</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="plan section">
+                <div class="up-color"></div>
+                <div class="p-3">
+                  <div class="head&disp heading-section">
+                    <h3>100/100 MBPS</h3>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, commodi.
+                    </p>
+                  </div>
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                  </ul>
+                  <div class="feature1">
+                    <input
+                      type="radio"
+                      id="feature1"
+                      value="Priority"
+                      name="MBPS_TYPE"
+                    />
+                    <div class="after_input">
+                      <span> select </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="plan section">
+                <div class="up-color"></div>
+                <div class="p-3">
+                  <div class="head&disp heading-section">
+                    <h3>100/100 MBPS</h3>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, commodi.
+                    </p>
+                  </div>
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                  </ul>
+                  <div class="feature1">
+                    <input
+                      type="radio"
+                      id="feature1"
+                      value="Priority"
+                      name="MBPS_TYPE"
+                    />
+                    <div class="after_input">
+                      <span> select </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="plan section">
+                <div class="up-color"></div>
+                <div class="p-3">
+                  <div class="head&disp heading-section">
+                    <h3>100/100 MBPS</h3>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, commodi.
+                    </p>
+                  </div>
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                  </ul>
+                  <div class="feature1">
+                    <input
+                      type="radio"
+                      id="feature1"
+                      value="Priority"
+                      name="MBPS_TYPE"
+                    />
+                    <div class="after_input">
+                      <span> select </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="plan section">
+                <div class="up-color"></div>
+                <div class="p-3">
+                  <div class="head&disp heading-section">
+                    <h3>100/100 MBPS</h3>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, commodi.
+                    </p>
+                  </div>
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>Unlimited Data
+                    </li>
+                  </ul>
+                  <div class="feature1">
+                    <input
+                      type="radio"
+                      id="feature1"
+                      value="Priority"
+                      name="MBPS_TYPE"
+                    />
+                    <div class="after_input">
+                      <span> select </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fourth-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="d-flex">
+                <div class="number">4</div>
+                <div class="address">
+                  <p>Select Your Support pack</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="section">
+                <div class="up-color"></div>
+                <div class="p-3">
+                  <div
+                    class="heading-section d-flex align-items-center justify-content-between"
+                  >
+                    <h4>Bronze</h4>
+                  </div>
+                  <ul>
+                    <li><i class="fa-solid fa-circle-check"></i>Lorem</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Lorem</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Lorem</li>
+                  </ul>
+                  <div class="feature1">
+                    <input
+                      type="radio"
+                      id="feature1"
+                      value="Priority"
+                      name="category_TYPE"
+                    />
+                    <div class="after_input">
+                      <span> select </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="section">
+                <div class="up-color"></div>
+                <div class="p-3">
+                  <div
+                    class="heading-section d-flex align-items-center justify-content-between"
+                  >
+                    <h4>Silver</h4>
+                  </div>
+                  <ul>
+                    <li><i class="fa-solid fa-circle-check"></i>Lorem</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Lorem</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Lorem</li>
+                  </ul>
+                  <div class="feature1">
+                    <input
+                      type="radio"
+                      id="feature1"
+                      value="Priority"
+                      name="category_TYPE"
+                    />
+                    <div class="after_input">
+                      <span> select </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="section">
+                <div class="up-color"></div>
+                <div class="p-3">
+                  <div
+                    class="heading-section d-flex align-items-center justify-content-between"
+                  >
+                    <h4>Gold</h4>
+                  </div>
+                  <ul>
+                    <li><i class="fa-solid fa-circle-check"></i>Lorem</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Lorem</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Lorem</li>
+                  </ul>
+                  <div class="feature1">
+                    <input
+                      type="radio"
+                      id="feature1"
+                      value="Priority"
+                      name="category_TYPE"
+                    />
+                    <div class="after_input">
+                      <span> select </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fifth-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-12 col-sm-12">
+              <div class="d-flex">
+                <div class="number">5</div>
+                <div class="address">
+                  <p>Would Your like to include a managed enterprise rotuer?</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-4 col-sm-4 d-flex justify-content-between"
+            >
+              <div class="feature2">
+                <input
+                  type="radio"
+                  id="feature2"
+                  value="Priority"
+                  name="yesno_TYPE"
+                />
+                <div class="after_input2">
+                  <button>Yes</button>
+                </div>
+              </div>
+              <div class="feature2">
+                <input
+                  type="radio"
+                  id="feature2"
+                  value="Priority"
+                  name="yesno_TYPE"
+                />
+                <div class="after_input2">
+                  <button>No</button>
+                </div>
+              </div>
+              <!-- <div class="yesno d-flex">
+                <button>YES</button>
+                <button>No</button>
+              </div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+              <div class="cisco-wrapper section">
+                <div class="up-color"></div>
+                <div class="p-3">
+                  <div class="heading d-flex heading-section">
+                    <div>
+                      <h4>Cisco 1100 Series Router</h4>
+                      <p>Business-grade connectivity</p>
+                    </div>
+                    <div><img src="modem.jpg" alt="modem" /></div>
+                  </div>
+                  <div class="content d-flex justify-content-between">
+                    <p>Would You like to include 4g follower</p>
+                    <div class="center">
+                      <input type="checkbox" name="" />
+                    </div>
+                  </div>
+                  <div class="feature1">
+                    <input
+                      type="radio"
+                      id="feature1"
+                      value="Priority"
+                      name="router_TYPE"
+                    />
+                    <div class="after_input">
+                      <span> select </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sixth-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="d-flex">
+                <div class="number">6</div>
+                <div class="address">
+                  <p>Select Your Support pack</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="section five-sect-para">
+                <div class="up-color"></div>
+                <div class="p-3">
+                  <div
+                    class="heading-section d-flex align-items-center justify-content-between"
+                  >
+                    <h4>12 Months</h4>
+                  </div>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione, saepe?
+                  </p>
+                  <div class="feature1">
+                    <input
+                      type="radio"
+                      id="feature1"
+                      value="months"
+                      name="months_TYPE"
+                    />
+                    <div class="after_input">
+                      <span> select </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="section five-sect-para">
+                <div class="up-color"></div>
+                <div class="p-3">
+                  <div
+                    class="heading-section d-flex align-items-center justify-content-between"
+                  >
+                    <h4>24 Months</h4>
+                  </div>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione, saepe?
+                  </p>
+                  <div class="feature1">
+                    <input
+                      type="radio"
+                      id="feature1"
+                      value="months"
+                      name="months_TYPE"
+                    />
+                    <div class="after_input">
+                      <span> select </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="section five-sect-para">
+                <div class="up-color"></div>
+                <div class="p-3">
+                  <div
+                    class="heading-section d-flex align-items-center justify-content-between"
+                  >
+                    <h4>36 Months</h4>
+                  </div>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione, saepe?
+                  </p>
+                  <div class="feature1">
+                    <input
+                      type="radio"
+                      id="feature1"
+                      value="Priority"
+                      name="months_TYPE"
+                    />
+                    <div class="after_input">
+                      <span> select </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
